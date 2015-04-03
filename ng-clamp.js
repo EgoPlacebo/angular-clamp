@@ -16,7 +16,7 @@
       $timeout(function() {
         var lineCount = 1, lineMax = +attrs.clamp;
         var lineStart = 0, lineEnd = 0;
-        var text = element.html().replace(/\n/g, ' ');
+        var text = element.html().replace(/\n/g, ' ') + ' '; // add space at end, if not last word not detected
         var maxWidth = element[0].offsetWidth;
         var estimateTag = createElement();
 
