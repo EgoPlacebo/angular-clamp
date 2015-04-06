@@ -56,7 +56,7 @@
 
                 text.replace(/ /g, function (m, pos) {
                     estimateTag.html(text.slice(lineStart, pos));
-                    if (estimateTag.width() > maxWidth && lineCount < lineMax) {
+                    if (estimateTag.width() >= maxWidth && lineCount < lineMax) {
                         var clampTag = createElement();
                         resetElement(clampTag);
                         clampTag.html(text.slice(lineStart, lineEnd));
