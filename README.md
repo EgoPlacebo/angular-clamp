@@ -1,5 +1,15 @@
 ## Angular Clamp
 
+### Installation
+
+To add angular-clamp to your project, first [install Bower](http://bower.io/#install-bower) and run :
+```
+bower install angular-clamp
+```
+Add `--save` to add it in your `bower.json`.
+
+Finally, inject `'directives.clamp'` into your module.
+
 ### Examples
 
 ```html
